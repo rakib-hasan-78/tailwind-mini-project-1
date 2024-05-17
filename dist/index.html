@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind webpack</title>
+</head>
+<body>
+    <section class="email-subscription bg-zinc-700">
+        <!-- **Subscriber Container** -->
+        <div class="container">
+            <!-- **-- Subscribing Contents --** -->
+            <div class="flex items-center h-screen justify-center mx-auto">
+                <!-- **--Subscribe card--** -->
+                <div class="flex flex-col md:flex-row bg-zinc-800 p-2 rounded-2xl">
+                    <!-- **--Image Content--** -->
+
+                        <img class="object-fill h-80 rounded-lg md:rounded-r-none  transform transition-all duration-200 hover:scale-105" src="./images/image.jpg" alt="subscribe-image">
+
+                    <!-- **--Email Content--** -->
+                    <div class="p-6 md:p-12">
+                        <h2 class="text-white font-medium text-xl">Get diet and fitness tips in your inbox</h2>
+                        <p class="max-w-xs text-white text-center text-sm leading-5 mt-4 md:text-left">Eat better and exercise better. Sign up for the Diet&Fitness newsletter.</p>
+                        <div class="flex flex-col md:flex-row mt-5 space-y-4 md:space-y-0 md:space-x-4">
+                            <input class="p-2 px-4 text-center placeholder:text-xs placeholder:text-center border border-zinc-500 bg-zinc-800 text-white focus:outline-none text-xs" type="email" placeholder="Enter your email address">
+                            <button class="px-5 py-3 bg-lime-500 text-xs rounded-md text-zinc-800 transition-all duration-500 hover:bg-lime-700 hover:text-white" type="button">subscribe</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./bundle.js" ></script>
+</body>
+</html>
